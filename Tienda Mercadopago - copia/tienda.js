@@ -88,7 +88,7 @@ async function pagar() {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer APP_USR-7662969524140814-022018-66e03b6ad76524a1f0b34d6121a47817-254665851"
+            "Authorization"#"
         },
         body: JSON.stringify({
             items: items,
