@@ -79,12 +79,12 @@ async function pagar() {
     const total = carrito.reduce((acc, producto) => acc + producto.precio * producto.cantidad, 0);
 
     // Configura el public_key de Mercado Pago
-    const mp = new MercadoPago('APP_USR-2e63e1ff-d8c3-4511-a7ef-fb3d2bb1adae', {
+    const mp = new MercadoPago('#', {
         locale: 'es-AR'
     });
 
     // Crear la preferencia de pago
-    const response = await fetch("https://api.mercadopago.com/checkout/preferences", {
+    const response = await fetch("#", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
